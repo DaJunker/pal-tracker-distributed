@@ -2,10 +2,10 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-DaJu.apps.sys.pikes.pal.pivotal.io
+  - route: allocations-pal-DaJu.pal.pivotal.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-DaJu.apps.sys.pal.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-DaJu.pal.pivotal.io
   services:
   - tracker-allocations-database
